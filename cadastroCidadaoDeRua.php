@@ -17,7 +17,7 @@ if (isset($_POST)):
         // Grava no banco de dados as informa��es do contato
         $opcoes = array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8');
 
-        $pdo = new PDO('mysql:host=localhost;dbname=db_blog', 'root', '', $opcoes);
+        $pdo = new PDO('mysql:host=localhost;dbname='id11181194_agentedb', 'id11181194_emanuel', 'emanuel123', $opcoes);
 
         $sql = "INSERT INTO moradorderua (sus, tempoRua, alimentaAoDia, origemAlimentacao, higienePessoal, recebeBeneficio, refFamiliar)VALUES(:sus, :tempoRua,:alimentaAoDia, :origemAlimentacao, :higienePessoal, :recebeBeneficio, :refFamiliar)";
         $stm = $pdo->prepare($sql);
